@@ -18,7 +18,8 @@ class Fibonacci {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter number: ");
         int num = sc.nextInt();
-        System.out.println("Recursive number is " + getFibonacci(num));
+        System.out.println("Fibonacci number is " + getFibonacci(num));
         sc.close();
     }
 }
+
