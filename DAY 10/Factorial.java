@@ -3,7 +3,7 @@ import java.util.Scanner;
 class Factorial{
     static int getfactorial(int num){
         int fact = 1;
-        if(num <=1){
+        if(num <= 1){
             return fact;
         } else{
             return num * (getfactorial(num - 1));
@@ -17,4 +17,5 @@ class Factorial{
         System.out.println("Factorial is " + getfactorial(num));
         sc.close();
     }
+
 }
