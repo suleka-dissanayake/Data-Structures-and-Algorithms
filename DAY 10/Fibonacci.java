@@ -1,17 +1,10 @@
 import java.util.Scanner;
 
 class Fibonacci {
-    static int getFibonacci(int num){
-        int fibonacciNum = 1;
-        if(num <= 1){
-            return 1;
-        } else{
-            num -= 1;
-            fibonacciNum += num;
-            num -= 2;
-            fibonacciNum += num;
-        }
-        return fibonacciNum;
+    static int getFibonacci(int num) {
+        if (num == 0) return 0;
+        if (num == 1) return 1;
+        return getFibonacci(num - 1) + getFibonacci(num - 2);
     }
 
     public static void main(String[] args) {
@@ -22,4 +15,5 @@ class Fibonacci {
         sc.close();
     }
 }
+
 
