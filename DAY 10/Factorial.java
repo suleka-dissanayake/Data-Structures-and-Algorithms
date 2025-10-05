@@ -2,9 +2,8 @@ import java.util.Scanner;
 
 class Factorial{
     static int getfactorial(int num){
-        int fact = 1;
         if(num <= 1){
-            return fact;
+            return 1;
         } else{
             return num * (getfactorial(num - 1));
         }
@@ -19,3 +18,4 @@ class Factorial{
     }
 
 }
+
